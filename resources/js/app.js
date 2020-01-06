@@ -8,6 +8,18 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+// register the plugin on vue
+import Toasted from 'vue-toasted';
+
+let toasted_options = {
+	theme: "toasted-primary", 
+	position: "top-center", 
+	duration : 5000
+};
+
+Vue.use(Toasted, toasted_options)
+
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue

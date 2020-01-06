@@ -6,3 +6,10 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+* {
+    font-size: 14px;
+}
+.form-control:focus {
+    box-shadow: none;
+}
